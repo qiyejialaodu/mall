@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     private IUserService userService;
 
-    @GetMapping(value = "/list",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @GetMapping(value = "/list")
     public List<User> findAll(){
         return userService.findAllUser();
     }
