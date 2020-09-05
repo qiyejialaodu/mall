@@ -44,7 +44,6 @@ public class BaseGlobalResponseBodyAdvice implements ResponseBodyAdvice <Object>
      */
     @Override
     public Object beforeBodyWrite(Object o, MethodParameter methodParameter, MediaType mediaType, Class aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
-        LOGGER.info("当前运行的类为"+methodParameter.getMethod().getClass().getName()+"类"+methodParameter.getMethod().getName()+"方法返回的数据为:"+ o);
         if (o instanceof ResponseResult){
             return ResponseResult.success(o);
         }else {
