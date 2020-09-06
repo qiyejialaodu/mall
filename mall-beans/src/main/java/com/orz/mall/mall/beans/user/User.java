@@ -1,4 +1,4 @@
-package com.orz.mall.mall.user;
+package com.orz.mall.mall.beans.user;
 
 import lombok.Data;
 
